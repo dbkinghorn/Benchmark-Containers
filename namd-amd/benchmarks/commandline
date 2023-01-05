@@ -1,0 +1,4 @@
+../NAMD_2.14_Linux-x86_64-multicore-CUDA/namd2 +p${n} +setcpuaffinity +idlepoll +isomalloc_sync +devices 0,1  apoa1.namd | grep 'Benchmark\|WallClock' | tee -a test.out
+
+
+../NAMD_2.14_Linux-x86_64-multicore/namd2 +p64 +setcpuaffinity +idlepoll apoa1.namd | grep 'Benchmark\|WallClock' | tee -a test.out

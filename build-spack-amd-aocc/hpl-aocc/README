@@ -1,0 +1,21 @@
+
+Steps to run HPL(32x4):
+
+1. Make sure OpenMPI path is set under run_hpl_ccx.sh and xhpl_ccx.sh
+2. Set AOCC compiler path under xhpl_ccx.sh
+3. Set matrix size under HPL.dat and (P, Q) values to (4, 8) if not set.
+4. Copy appfile_ccx_32x4 to appfile_ccx
+5. Set OMP_NUM_THREADS=4 under run_hpl_ccx.sh
+6. bash run_hpl_ccx.sh
+
+Steps to run HPL(16x8):
+
+1. Make sure OpenMPI path is set under run_hpl_ccx.sh and xhpl_ccx.sh
+2. Set AOCC compiler path under xhpl_ccx.sh
+3. Set matrix size under HPL.dat and (P, Q) values to (4, 4)
+4. Copy appfile_ccx_16x8 to appfile_ccx
+5. Set OMP_NUM_THREADS=8 under run_hpl_ccx.sh
+6. bash run_hpl_ccx.sh
+
+
+

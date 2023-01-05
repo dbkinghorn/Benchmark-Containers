@@ -1,0 +1,12 @@
+Benchmarking HMMER in a meaningful way will require significant data download.
+I don't have what I would consider a suitable benchmark yet. But the following is a possibility,
+
+wget https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+wget https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+
+mpirun -np 64 hmmsearch --mpi -o hmmsearch.out Pfam-A.hmm uniprot_sprot.fasta
+
+Pfam-A.hmm decompresses to 1.5GB 
+uniprot_sprot.fasta   to 270MB
+
+The command line above for a job run took 71min on a TR Pro 5995X 64-core CPU

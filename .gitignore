@@ -1,0 +1,13 @@
+no-git/
+*.deb
+Testing/*
+*.tar
+*.gz
+*~
+*.tpr
+
+**/stmv/*
+**/apoa1/*
+**/f1atpase/*
+**/spack-mirror/*
+

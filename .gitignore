@@ -5,9 +5,9 @@ Testing/*
 *.gz
 *~
 *.tpr
+blog/*
 
 **/stmv/*
 **/apoa1/*
 **/f1atpase/*
 **/spack-mirror/*
-

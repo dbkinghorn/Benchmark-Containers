@@ -713,7 +713,7 @@ RUN . /opt/spack/share/spack/setup-env.sh && \
 
 ## hpcg-amd example (using unsigned packages because key handling is crazy)
 
-The mistake I was making with the keys was (following docs) and cp pubring.* since that copies 2 keys if you have doen this more than once!  Then spack doesn't know which one to use and defaults to none and the docker build fails.
+The mistake I was making with the keys was (following docs) and cp pubring.* since that copies 2 keys if you have done this more than once!  Then spack doesn't know which one to use and defaults to none and the docker build fails.
 Solution should be to only copy 1 key  the ~ backup was causing the trouble. Just copy pubring.kbx
 
 However, it makes sense to do this without signing since I'm building containers from my local build cache.

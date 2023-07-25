@@ -1,5 +1,5 @@
 # Spack Build image with AMD aocc compilers installed and ready for use with spack
-FROM docker.io/spack/ubuntu-jammy:v0.19.0 
+FROM docker.io/spack/ubuntu-jammy:v0.20.1 
 
 WORKDIR /root
 # You need to have a downloaded copy of aocc

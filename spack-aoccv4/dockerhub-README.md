@@ -1,11 +1,11 @@
-# Sapck v0.19.0 + AMD AOCCv4 compilers
-This is a container image with the Spack package manager/build system v0.19.0 that includes AMD AOCC v4 compilers. This is the build image from multi-stage Dockerfiles that will be used to build scientific applications and benchmarks with targeted Zen3/4 optimizations.
+# Sapck v0.20.1 + AMD AOCCv4 compilers
+This is a container image with the Spack package manager/build system v0.20.1 that includes AMD AOCC v4 compilers. This is the build image from multi-stage Dockerfiles that will be used to build scientific applications and benchmarks with targeted Zen3/4 optimizations.
 
 ## Dockerfile
  
 ```
 # Spack Build image with AMD aocc compilers installed and ready for use with spack
-FROM docker.io/spack/ubuntu-jammy:v0.19.0 
+FROM docker.io/spack/ubuntu-jammy:v0.20.1 
 
 WORKDIR /root
 # You need to have a downloaded copy of aocc
